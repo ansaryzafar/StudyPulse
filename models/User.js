@@ -9,6 +9,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    email: { 
+        type: String, 
+        required: true, 
+        unique: true },
     roles: [{
         type: String,
         default:"user"
@@ -18,3 +22,5 @@ const userSchema = new mongoose.Schema({
         default: true
     }
 })
+
+module.exports = mongoose.model('User', userSchema)
