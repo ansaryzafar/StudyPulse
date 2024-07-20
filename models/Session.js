@@ -1,4 +1,4 @@
-
+const mongoose = require('mongoose')
 const sessionSchema = new Schema({
     user: { 
         type: Schema.Types.ObjectId, 

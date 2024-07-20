@@ -1,4 +1,4 @@
-
+const mongoose = require('mongoose')
 const goalSchema = new Schema({
     user: { 
         type: Schema.Types.ObjectId, 
